@@ -1,7 +1,7 @@
 resource "ibm_lbaas" "lbaas" {
   name        = "test"
   description = "updated desc-used for terraform uat"
-  subnets     = [10.171.146.0]
+  subnets     = [6393ff90-dceb-4e5d-8934-c2ed571d8c05]
 #  datacenter  = "dal13"
 
   protocols {
