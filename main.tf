@@ -5,7 +5,7 @@ resource "ibm_lbaas" "lbaas" {
   name        = "test"
   description = "updated desc-used for terraform uat"
   subnets     = [1492041]
-#  datacenter  = "dal13"
+  datacenter  = "dal13"
 
   protocols {
     frontend_protocol     = "HTTP"
