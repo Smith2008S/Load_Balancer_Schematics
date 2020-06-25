@@ -1,5 +1,5 @@
 resource "ibm_compute_ssl_certificate" "lbaas-ssl-certificate2" {
-  certificate = <<EOF
+  certificate = "<<EOF
 -----BEGIN CERTIFICATE-----
 MIIEujCCA6KgAwIBAgIJAKMRot3rBodEMA0GCSqGSIb3DQEBBQUAMIGZMQswCQYD
 VQQGEwJVUzEQMA4GA1UECBMHR2VvcmdpYTEQMA4GA1UEBxMHQXRsYW50YTEMMAoG
@@ -61,7 +61,7 @@ NXMjAHErbX2J+8k85TccHR1ps3MgBbFHdiuJwx2vUPLfVj53GWUXmg4Gw4zUs5mq
 ykXbeuyhK6AL6V3NsJyP454bM8dmZnxBrZvRo5FnqQInGgwGSjgc
 -----END RSA PRIVATE KEY-----
     
-EOF
+EOF"
 
 }
 
