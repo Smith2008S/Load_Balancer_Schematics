@@ -1,7 +1,7 @@
 resource "ibm_lbaas" "lbaas" {
   name        = "test"
   description = "updated desc-used for terraform uat"
-  subnets     = [2367048]
+  subnets     = [10.171.146.0]
 #  datacenter  = "dal13"
 
   protocols {
@@ -15,7 +15,7 @@ resource "ibm_lbaas" "lbaas" {
 
 resource "ibm_lbaas_server_instance_attachment" "lbaas_member" {
   count              = 1
-  private_ip_address = "10.95.118.234"
+  private_ip_address = "10.171.146.2"
   weight             = 40
   lbaas_id           = "ibm_lbaas.lbaas.id"
 }
