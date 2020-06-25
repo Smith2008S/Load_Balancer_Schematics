@@ -77,7 +77,7 @@ resource "ibm_lbaas" "lbaas" {
     frontend_port         = 80
     backend_protocol      = "HTTP"
     backend_port          = 80
-    load_balancing_method = "${var.round_robin}"
+    load_balancing_method = "round_robin"
     tls_certificate_id    = ${ibm_compute_ssl_certificate.lbaas-ssl-certificate2.id}
   }
 }
