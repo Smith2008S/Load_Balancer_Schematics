@@ -8,5 +8,5 @@ provider "ibm" {
   iaas_classic_api_key  = "${var.iaas_classic_api_key}"
   ibmcloud_api_key      = "${var.ibmcloud_api_key}"
 #  region                = "var.region"
-#  ibmcloud_api_key      = "Hm74xDW9_yXqdEbXVg3je0sco641A6_5vcdcHSY3UblV"# "var.ibmcloud_api_key"
+#  ibmcloud_api_key      = "var.ibmcloud_api_key"
 }
